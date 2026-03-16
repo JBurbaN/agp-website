@@ -1,0 +1,351 @@
+<!DOCTYPE html><html lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#9e0000",
+                        "background-light": "#f8f9fa",
+                        "background-dark": "#230f0f",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .dropdown:hover .dropdown-menu { display: block; }
+        .sticky-nav { position: sticky; top: 0; z-index: 50; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="bg-primary text-white py-2 px-4 text-center text-xs font-medium uppercase tracking-wider" style=""><br></div>
+<header class="sticky-nav bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<span class="material-symbols-outlined text-4xl" style="">school</span>
+</div>
+<div class="flex flex-col">
+<h1 class="text-lg font-extrabold leading-none tracking-tight text-slate-900 dark:text-white uppercase" style="">I.E. Antonio García Paredes</h1>
+<span class="text-[10px] text-slate-500 font-semibold tracking-widest" style="">POPAYÁN, CAUCA - COLOMBIA</span>
+</div>
+</div>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-sm font-semibold text-slate-700 dark:text-slate-200 hover:text-primary transition-colors" href="#" style="">Inicio</a>
+<div class="relative dropdown group">
+<button class="flex items-center gap-1 text-sm font-semibold text-slate-700 dark:text-slate-200 hover:text-primary transition-colors" style="">
+                            Institucional <span class="material-symbols-outlined text-sm" style="">expand_more</span>
+</button>
+<div class="dropdown-menu hidden absolute left-0 mt-0 w-56 bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 shadow-xl rounded-lg py-2">
+<a class="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700" href="#" style="">Misión y visión</a>
+<a class="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700" href="#" style="">Símbolos institucionales</a>
+<a class="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700" href="#" style="">Himno de la institución</a>
+<a class="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700" href="#" style="">Reseña histórica</a>
+<a class="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700" href="#" style="">Uniforme institucional</a>
+<a class="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700" href="#" style="">Sedes</a>
+<a class="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700" href="#" style=""><br></a>
+</div>
+</div>
+<div class="relative dropdown group">
+<button class="flex items-center gap-1 text-sm font-semibold text-slate-700 dark:text-slate-200 hover:text-primary transition-colors" style="">
+                            Proyectos <span class="material-symbols-outlined text-sm" style="">expand_more</span>
+</button>
+<div class="dropdown-menu hidden absolute left-0 mt-0 w-64 bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 shadow-xl rounded-lg py-2">
+<a class="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700" href="#" style="">Proyecto de Vida</a>
+<a class="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700" href="#" style="">Canción Colombiana</a>
+<a class="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700" href="#" style="">Educación Ambiental</a>
+<a class="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700" href="#" style="">Escuela de Padres</a>
+<a class="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700" href="#" style="">Construyendo Identidad Cultural</a>
+</div>
+</div>
+<div class="relative dropdown group">
+<button class="flex items-center gap-1 text-sm font-semibold text-slate-700 dark:text-slate-200 hover:text-primary transition-colors" style="">
+                            Trámites <span class="material-symbols-outlined text-sm" style="">expand_more</span>
+</button>
+<div class="dropdown-menu hidden absolute left-0 mt-0 w-56 bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 shadow-xl rounded-lg py-2">
+<a class="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700" href="#" style="">Inscripciones y Matricula</a>
+<a class="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700" href="#" style="">Calendario Académico</a>
+<a class="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700" href="#" style="">Documentos</a>
+<a class="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700" href="#" style="">Horarios de Clase</a>
+</div>
+</div>
+<a class="text-sm font-semibold text-slate-700 dark:text-slate-200 hover:text-primary transition-colors" href="#" style="">Directorio</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-white text-sm font-bold py-2.5 px-6 rounded-lg hover:bg-red-800 transition-colors shadow-lg shadow-primary/20" style="">
+                        Inscripciones
+                    </button>
+<button class="lg:hidden text-slate-900 dark:text-white" style="">
+<span class="material-symbols-outlined" style="">menu</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<section class="relative h-[600px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-primary/40 mix-blend-multiply z-10"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent z-10"></div>
+<img class="w-full h-full object-cover" data-alt="Modern high school building exterior with glass and red brick" src="https://scontent.fclo1-4.fna.fbcdn.net/v/t39.30808-6/555538467_10234365192566028_8010241321539104960_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=2a1932&amp;_nc_ohc=26gx1xPp0n0Q7kNvwHo3Mr3&amp;_nc_oc=AdlcmpCXQrcMujVJnK6pzbLPRuYelMOvZ5nyRDme_uWz-zAH1xXgIAn4WuIfem7sjxk&amp;_nc_zt=23&amp;_nc_ht=scontent.fclo1-4.fna&amp;_nc_gid=Y1LkM5-4ahB4CKUGhQ4EgQ&amp;_nc_ss=8&amp;oh=00_AfzE9L2MQeXUYNPcIPCxHE1inwS7cimNeYnWmfYDGTnmWA&amp;oe=69B16ABA" style="">
+</div>
+<div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+<div class="max-w-3xl">
+<h1 class="text-4xl md:text-6xl font-black text-white leading-tight mb-6 tracking-tight" style="">
+                    Institución Educativa Antonio García Paredes
+                </h1>
+<p class="text-xl text-slate-100 mb-10 leading-relaxed font-medium" style="">
+                    Formación integral basada en valores, cultura y educación de calidad para la comunidad de Popayán.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary hover:bg-red-800 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105" style="">
+                        Conoce nuestra institución
+                    </button>
+<button class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 font-bold py-4 px-8 rounded-lg text-lg transition-all" style="">Contáctanos</button>
+</div>
+</div>
+</div>
+</section>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-30">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-xl border-b-4 border-primary flex items-center gap-6">
+<div class="bg-primary/10 p-4 rounded-full">
+<span class="material-symbols-outlined text-primary text-4xl" style="">history_edu</span>
+</div>
+<div>
+<p class="text-3xl font-black text-slate-900 dark:text-white" style="">45+</p>
+<p class="text-sm font-bold text-slate-500 uppercase tracking-widest" style="">Años de Trayectoria</p>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-xl border-b-4 border-primary flex items-center gap-6">
+<div class="bg-primary/10 p-4 rounded-full">
+<span class="material-symbols-outlined text-primary text-4xl" style="">domain</span>
+</div>
+<div>
+<p class="text-3xl font-black text-slate-900 dark:text-white" style="">5</p>
+<p class="text-sm font-bold text-slate-500 uppercase tracking-widest" style="">Sedes Educativas</p>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-xl border-b-4 border-primary flex items-center gap-6">
+<div class="bg-primary/10 p-4 rounded-full">
+<span class="material-symbols-outlined text-primary text-4xl" style="">groups</span>
+</div>
+<div>
+<p class="text-3xl font-black text-slate-900 dark:text-white" style="">14<span style="font-size: 1.875rem;">00+</span></p>
+<p class="text-sm font-bold text-slate-500 uppercase tracking-widest" style="">Estudiantes</p>
+</div>
+</div>
+</div>
+</div>
+<section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-end justify-between mb-12">
+<div>
+<span class="text-primary font-bold tracking-widest uppercase text-sm mb-2 block" style="">Servicios al estudiante</span>
+<h2 class="text-4xl font-black text-slate-900 dark:text-white" style="">Acceso Rápido</h2>
+</div>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-6 gap-4">
+<a class="group bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border border-slate-100 dark:border-slate-700 text-center" href="#" style="">
+<span class="material-symbols-outlined text-primary text-3xl mb-3 block group-hover:scale-110 transition-transform" style="">calendar_month</span>
+<p class="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase" style="">Calendario Académico</p>
+</a>
+<a class="group bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border border-slate-100 dark:border-slate-700 text-center" href="#" style="">
+<span class="material-symbols-outlined text-primary text-3xl mb-3 block group-hover:scale-110 transition-transform" style="">schedule</span>
+<p class="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase" style="">Horarios de Clase</p>
+</a>
+<a class="group bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border border-slate-100 dark:border-slate-700 text-center" href="#" style="">
+<span class="material-symbols-outlined text-primary text-3xl mb-3 block group-hover:scale-110 transition-transform" style="">checklist</span>
+<p class="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase" style="">Lista de Útiles</p>
+</a>
+<a class="group bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border border-slate-100 dark:border-slate-700 text-center" href="#" style="">
+<span class="material-symbols-outlined text-primary text-3xl mb-3 block group-hover:scale-110 transition-transform" style="">person_add</span>
+<p class="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase" style="">Inscripciones<div>y</div><div>matriculas</div></p>
+</a>
+<a class="group bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border border-slate-100 dark:border-slate-700 text-center" href="#" style="">
+<span class="material-symbols-outlined text-primary text-3xl mb-3 block group-hover:scale-110 transition-transform" style="">menu_book</span>
+<p class="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase" style="">Manual de Convivencia</p>
+</a>
+<a class="group bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border border-slate-100 dark:border-slate-700 text-center" href="#" style="">
+<span class="material-symbols-outlined text-primary text-3xl mb-3 block group-hover:scale-110 transition-transform" style="">description</span>
+<p class="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase" style="">PEI Institucional</p>
+</a>
+</div>
+</section>
+<section class="py-24 bg-white dark:bg-slate-900">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-end justify-between mb-12">
+<div>
+<span class="text-primary font-bold tracking-widest uppercase text-sm mb-2 block" style="">Actualidad</span>
+<h2 class="text-4xl font-black text-slate-900 dark:text-white uppercase tracking-tight" style="">Noticias Recientes</h2>
+</div>
+<a class="hidden md:flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all" href="#" style="">
+                    Ver todas las noticias <span class="material-symbols-outlined" style="">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<article class="bg-background-light dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="h-56 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="School cultural festival with students in traditional dress" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqh5KEEkVOLliEcW93SC9jn8w79EKqXYEfHSbew0-IyXuFhros-voxWfUTmI5aGW53Ku833a35jJV0lXWpTTylE4dP-V7JIXF0iHl08vDZtmLhyonLeDxZ0F2nGeNBh4-t_ZFvNNovESNj1RqsxWmrQpEyDGro4Y8lbP3Fx9gxB4F84R1J7ZEl4MtnRb6dxhnMkpCkYgufQvpABAHj1QNUqdiu2-GynQykywazVeosgbfrx37Uorz6c3rEWZqKzb6Kj33Trj-hbQ" style="">
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 text-slate-500 text-xs font-bold uppercase mb-3">
+<span class="material-symbols-outlined text-sm" style="">calendar_today</span>
+<span class="" style="">15 Mayo, 2024</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3" style="">Festival de la Canción Colombiana 2024</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm mb-6 line-clamp-3" style="">
+                            Celebramos nuestras raíces con una jornada llena de talento y cultura. Estudiantes de todas las sedes participaron en este evento emblemático...
+                        </p>
+<button class="text-primary font-bold text-sm hover:underline flex items-center gap-1" style="">
+                            Leer más <span class="material-symbols-outlined text-sm" style="">chevron_right</span>
+</button>
+</div>
+</article>
+<article class="bg-background-light dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="h-56 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Students participating in an environmental project outdoors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsuf-14qgUOUZTauKoaYOR3VDZbehvEYMCXEARqF81olU34sfgH6niLc_dedVwOQGNmlwVc9mEXrtdnhOCyJP36Y0lL8iDKVXgEk6sjW_ExouL7Yp45snmDhxeXWpL6qpSBA6WpRRmnwHD5x1ZLmT9L0PNhw8xQ1DAVRebIi0YYZgbl0xgpFga2UOmEAgqUfKJOQrc8XR4K6f4-shr-3BvYEb5BWTmFtvIlIHLi49SGehgx1pkBI4NdaeYPpjIl_Tgb_h1gYb6Wg" style="">
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 text-slate-500 text-xs font-bold uppercase mb-3">
+<span class="material-symbols-outlined text-sm" style="">calendar_today</span>
+<span class="" style="">10 Mayo, 2024</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3" style="">Proyecto Ambiental Escolar: Siembra</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm mb-6 line-clamp-3" style="">
+                            Nuestros estudiantes lideraron la jornada de reforestación en la Sede B, como parte del compromiso con la educación ambiental...
+                        </p>
+<button class="text-primary font-bold text-sm hover:underline flex items-center gap-1" style="">
+                            Leer más <span class="material-symbols-outlined text-sm" style="">chevron_right</span>
+</button>
+</div>
+</article>
+<article class="bg-background-light dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="h-56 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Teacher and parents meeting in a classroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn_P4ngHM0ICLTGvDT1YHjL650c1UbYgUMErVQs6lktyyDE4n3qO11EJ2Q0iydkIAh4CO0eKKrrJ9TO0dy3_ZoXFcVcCIYNnlZbRCU4V41wl4sTP1H3R2bcgBh83-9A9SJeKtp4nA4U3s58FwCMMtITzrxsypToY8RYF5JmJ1W-yH2jcBq5NruL7FhdsLa3gH75xsb86WlEWG2NgBEmrhT6532FvOqQ40zbSNJefwmB0KXRs_GLIiX98OirnA0fg2RmeUtHIivaQ" style="">
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 text-slate-500 text-xs font-bold uppercase mb-3">
+<span class="material-symbols-outlined text-sm" style="">calendar_today</span>
+<span class="" style="">05 Mayo, 2024</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3" style="">Encuentro de Escuela de Padres</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm mb-6 line-clamp-3" style="">
+                            Agradecemos la masiva asistencia al primer taller de "Construyendo Familia" del año escolar, donde compartimos pautas de crianza...
+                        </p>
+<button class="text-primary font-bold text-sm hover:underline flex items-center gap-1" style="">
+                            Leer más <span class="material-symbols-outlined text-sm" style="">chevron_right</span>
+</button>
+</div>
+</article>
+</div>
+<div class="mt-12 text-center md:hidden">
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all" href="#" style="">
+                    Ver todas las noticias <span class="material-symbols-outlined" style="">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<span class="text-primary font-bold tracking-widest uppercase text-sm mb-2 block" style="">Nuestra Experiencia</span>
+<h2 class="text-4xl font-black text-slate-900 dark:text-white uppercase tracking-tight" style="">Galería Institucional</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="aspect-square rounded-xl overflow-hidden group relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Students in a chemistry laboratory experiment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgTSPO-Paz3RxrlsaWjf9DsdZjTLuzBuScsJ-b5q9FWBztDVWH9TiA2G1TmaT3xs-_K2RxA6t8Tyv7LI2-hId8U0ZAHvA4zNe2tH0kKft6fWbpSOkADd46hUD9ryiBFSj8U86DNtqE4PjIRsqVSy8teNfV1YSDdPB34fFsOe4lJuGA1dV0xdhO06v0vS8PvuDKufQN5FSkDKmASGdFx6aQHmL0KpLmo3aO3JplJtpTj-cBrMX9_jwnjpXXccL0nz5VPjb8ZJFQFQ" style="">
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-white font-bold" style="">Ciencias</span>
+</div>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden group relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Students playing soccer in the school field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaZhAgefPVMpaHKBYq1YZ0mLXx7V2HAAFhmZkp_Hgu5Cyn99ZK2a7Hk3e4B6SEkA-xsUClEorp0DKHQBCGsICYAsuZPI378nef_HfbGxNwt3EP0Yf20Aqp6sKT6oal3_d5iklsB8aGMiXzWmGTdwPowvynfMBH24h0-a-NeOqT-UvMC8CjIHi2nDDWO0dPr4XqHgF4gim0N97rXy89LY3TjiZvSkEuFxIP5poUhyj16qiBltZufjpfGKT0gdDA0xLqmpIzsvwdRg" style="">
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-white font-bold" style="">Deportes</span>
+</div>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden group relative md:col-span-2 md:row-span-2">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Primary school children smiling in classroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRrCG0OEeilxnyPGsudYHO1NpLLoLOZ8vaC8VSBm19EmLzb7Qq164ZG4NITN_5sAz6q6qYeo7AaqGgGt_JSNPIiPuvoe8486M6ddLHifyipl5-yH2BmFhzwkLUZq5IS_c68edQuQgpbgPU4D9WlY-r8A23IakzYhJBtCKzW1a7CqhVseCJ29Q_ssLoX9Khx8ok2434RDjKqo0i_BGTP4tRXlTVQZtLDz3jaxLgZsWo4f33kHf1UZP8POYI5qHPcwefWYATUJhsRg" style="">
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-white font-bold text-xl" style="">Valores y Convivencia</span>
+</div>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden group relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Art class students painting on canvas" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcwgYRevoJia6OL7r5jG_kwkPsvWZCY3qa_FDWgB-nKgYdu0TyYToKSR-68jjl83uymzeHlWwyvMs2cIFzFbSRhSrw0zmWx_b_ykHJhVAEJxinR-kyxVvWJqouge-4IyspbXBrAZIG4Bei2xd-w_r_vXotL0okfBUH6ZOam4JSebTuuDfw60mdQhakAPirRIKqK9zdeTYQUblBinmnuXf2xG40yn1S9DgvFbSrIWaE6HtyzxyMV3hm8IDiM3fPA52Uier6PBsuUA" style="">
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-white font-bold" style="">Artes</span>
+</div>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden group relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="School debate or presentation event" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4fFkFPnk6vKV_RGU5yW8n7S6LC3QQu_ZmYk4STvspOCGp0CzQngxkkMyxMWhR0iF7alZFmAMmot65AxBYkDbE2OWy1fmaO3qUwc651q6eT8YlkyKE_frFiAOJCnh7kLS8tK7a9sV7b3ZlaTegaiFCRi7rhoi-rtCOE5sPSJ5NuNUCKdJGJAUARFuHEM5TCS-6jgRBF0mIBeDK0U94xNKrbELJARiJKxGFDvn8fmj7KvwnERT_W513PqRWVVThhk8baYMB_UrlVg" style="">
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-white font-bold" style="">Cultura</span>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-primary text-white pt-20 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-4xl" style="">school</span>
+<h2 class="text-2xl font-black uppercase leading-tight" style="">I.E. Antonio García Paredes</h2>
+</div>
+<p class="text-red-100 leading-relaxed mb-6 font-medium" style="">
+                        Comprometidos con la formación de ciudadanos íntegros, creativos y respetuosos de su patrimonio cultural y natural en la ciudad de Popayán.
+                    </p>
+<div class="flex gap-4">
+<a class="bg-white/10 p-2 rounded-lg hover:bg-white/20 transition-colors" href="#" style=""><span class="material-symbols-outlined" style="">public</span></a>
+<a class="bg-white/10 p-2 rounded-lg hover:bg-white/20 transition-colors" href="#" style=""><span class="material-symbols-outlined" style="">video_library</span></a>
+<a class="bg-white/10 p-2 rounded-lg hover:bg-white/20 transition-colors" href="#" style=""><span class="material-symbols-outlined" style="">alternate_email</span></a>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-6 border-b border-white/20 pb-4" style="">Enlaces Rápidos</h3>
+<ul class="space-y-3">
+<li class="" style=""><a class="text-red-100 hover:text-white flex items-center gap-2 transition-colors" href="#" style=""><span class="material-symbols-outlined text-sm" style="">chevron_right</span> Calendario Académico</a></li>
+<li class="" style=""><a class="text-red-100 hover:text-white flex items-center gap-2 transition-colors" href="#" style=""><span class="material-symbols-outlined text-sm" style="">chevron_right</span> Lista de Útiles</a></li>
+<li class="" style=""><a class="text-red-100 hover:text-white flex items-center gap-2 transition-colors" href="#" style=""><span class="material-symbols-outlined text-sm" style="">chevron_right</span> Manual de Convivencia</a></li>
+<li class="" style=""><a class="text-red-100 hover:text-white flex items-center gap-2 transition-colors" href="#" style=""><span class="material-symbols-outlined text-sm" style="">chevron_right</span> PEI Institucional</a></li>
+<li class="" style=""><a class="text-red-100 hover:text-white flex items-center gap-2 transition-colors" href="#" style=""><span class="material-symbols-outlined text-sm" style="">chevron_right</span> Horarios de Atención</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-6 border-b border-white/20 pb-4" style="">Contacto</h3>
+<ul class="space-y-4">
+<li class="flex gap-4 items-start" style="">
+<span class="material-symbols-outlined mt-1" style="">location_on</span>
+<span class="text-red-100 font-medium" style="">Calle 5 # 24-00, Barrio San José<br>Popayán, Cauca - Colombia</span>
+</li>
+<li class="flex gap-4 items-start" style="">
+<span class="material-symbols-outlined" style="">call</span>
+<span class="text-red-100 font-medium" style="">+57 (602) 823 XXXX</span>
+</li>
+<li class="flex gap-4 items-start" style="">
+<span class="material-symbols-outlined" style="">mail</span>
+<span class="text-red-100 font-medium" style="">contacto@ieantoniogarciaparedes.edu.co</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-red-200 font-medium">
+<p class="" style="">© 2024 Institución Educativa Antonio García Paredes. Todos los derechos reservados.</p>
+<div class="flex gap-6">
+<a class="hover:text-white transition-colors" href="#" style="">Protección de Datos</a>
+<a class="hover:text-white transition-colors" href="#" style="">Términos y Condiciones</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

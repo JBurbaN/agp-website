@@ -1,0 +1,26 @@
+/* Importamos el motor principal de Tailwind v4 */
+@import "tailwindcss";
+
+/* Importamos los plugins que instalaste */
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/container-queries";
+
+/* Aquí definimos tu paleta institucional y tipografía */
+@theme {
+  --color-primary: #9e0000;
+  --color-background-light: #f8f9fa;
+  --color-background-dark: #230f0f;
+  --font-display: var(--font-inter), sans-serif;
+}
+
+/* Tus clases personalizadas */
+@layer utilities {
+  .dropdown:hover .dropdown-menu { 
+    display: block; 
+  }
+  .sticky-nav { 
+    position: sticky; 
+    top: 0; 
+    z-index: 50; 
+  }
+}
