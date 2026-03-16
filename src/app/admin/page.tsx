@@ -1,21 +1,19 @@
 "use client";
 
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { onAuthStateChanged } from 'firebase/auth';
-import { auth } from '../lib/firebase';
+// Como ambos están en carpetas hijas de src/app/, solo subes un nivel
+import { auth } from '../lib/firebase'; 
 
 export default function AdminPage() {
   const router = useRouter();
 
   useEffect(() => {
-    // Escuchamos el estado de la autenticación
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
-        // Si el usuario ya está autenticado, lo mandamos al Dashboard
         router.push('/admin/dashboard');
       } else {
-        // Si no, lo mandamos a que inicie sesión
         router.push('/admin/login');
       }
     });
@@ -23,7 +21,6 @@ export default function AdminPage() {
     return () => unsubscribe();
   }, [router]);
 
-  // Mientras decide a dónde enviarlo, mostramos una pantalla de carga simple
   return (
     <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-900">
       <div className="flex flex-col items-center gap-4">
